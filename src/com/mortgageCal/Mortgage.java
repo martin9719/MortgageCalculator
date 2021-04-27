@@ -17,10 +17,10 @@ public class Mortgage {
         this.years = years;
     }
 
-    public double calMortgage(){
+    public String calMortgage(){
         setMonthlyRate();
         setNumOfPayments();
-        return getMonthlyPay();
+        return getCurrencyFormat(getMonthlyPay());
     }
 
     private double getMonthlyPay() {
